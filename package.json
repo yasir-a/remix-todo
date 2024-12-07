@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "start": "remix-serve ./build/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,21 @@
     "url": "https://github.com/yasir-a/remix-todo/issues"
   },
   "homepage": "https://github.com/yasir-a/remix-todo#readme",
+  "packageManager": "npm@10.9.2",
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
   "dependencies": {
     "@remix-run/node": "^2.15.0",
     "@remix-run/react": "^2.15.0",
     "@remix-run/serve": "^2.15.0",
-    "isbot": "^4.4.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "isbot": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.15.0",
+    "vite": "^5.1.0"
   }
 }
