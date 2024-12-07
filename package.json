@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/yasir-a/remix-todo/issues"
   },
-  "homepage": "https://github.com/yasir-a/remix-todo#readme"
+  "homepage": "https://github.com/yasir-a/remix-todo#readme",
+  "dependencies": {
+    "@remix-run/node": "^2.15.0",
+    "@remix-run/react": "^2.15.0",
+    "@remix-run/serve": "^2.15.0",
+    "isbot": "^4.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
